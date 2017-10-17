@@ -16,7 +16,7 @@ SAP HANA, express edition is a free, resource optimized version of the SAP HANA 
 
 For the purposes of this tutorial, we’ve attempted to minimize issues associated with internet connectivlty.    The container used in this hands on was designed specifically for this session.    Formal releases of the SAP HANA, express edition container will use volumes to persist data after the container is shut down.
 
-Docker for Mac has a number of caveats to consider, and is appropriate only for sandbox environments such as this tutorial.    The implementation uses a built in Virtual Machine (xhyve), and networking from the host is different to what should be expected from a linux environment.   
+Running SAP HANA, express edition on Docker for Mac has a number of caveats to consider, and is appropriate only for sandbox environments such as this tutorial.    The implementation uses a built in Virtual Machine (xhyve), and networking from the host is different to what should be expected from a linux environment.   
 
 In summary - don't expect Docker for Mac or Windows to be as robust and flexible as the Linux versions.
 
