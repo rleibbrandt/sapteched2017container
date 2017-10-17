@@ -89,7 +89,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 The SAP HANA, express edition container is hosted on the Docker Store - a marketplace for certified docker containers.  A login is required to access the container - so, the run command we ran for "alpine" earlier will not work.    You have to configure your docker client on the Mac with the Docker ID you created earlier.
 
-Type the following, and enter your Docker ID and passwrod when prompted:
+Type the following, and enter your Docker ID and password when prompted:
 
 `docker login`
 
@@ -111,7 +111,7 @@ Press enter if you see a blank screen with blinking cursur.  You should see a pr
 / # 
 ```
 
-* Type the following commands:
+* Type or copy and paste the following commands:
 
 ```
 sysctl -w net.ipv4.ip_local_port_range="40000 60999"
@@ -120,9 +120,10 @@ sysctl -w vm.max_map_count=2048576
 
 ```
 
+If you restart Docker or your mac, or change the networking configuration, the previous section will have to be repeated.
+
 ### Run the container
 
-Wait until the container is “pulled” before continuing to the next steps.   If you restart Docker or your mac, or change the networking configuration, the previous section will have to be repeated.
 
 The password for the HANA container is an input to the ***"docker run"*** command.  You have to create a password file, in JSON format - here is a sample:
 
@@ -147,9 +148,9 @@ Type the following keystrokes/commands:
 * Hit the escape key
 * Type “:wq!”
 
-The file should now be created in your Student folder.
+The file should now be created in your Student folder. 
 
-You're ready to instantiate the docker container now.   If the container has not been "pulled" (downloaded) yet, the run command will do that.
+You're ready to instantiate the docker container now.   If the container has not been "pulled" (downloaded) yet, the run command will do that.   
 
 ```
 docker run -p 39013:39013 -p 39017:39017 -p 39041-39045:39041-39045 -p 1128-1129:1128-1129 -p 59013-59014:59013-59014 -v /Users:/Users \
