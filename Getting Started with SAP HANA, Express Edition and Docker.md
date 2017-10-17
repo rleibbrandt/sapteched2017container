@@ -186,7 +186,7 @@ The -ti flag enables interactive mode - you should now have a shell in the conta
 
 `whoami`
 
-You should be logged in as hxeadm (the default SAPHANA, express edition operating system user.   Running `HDB info` should return the following, or similar output:
+You should be logged in as hxeadm (the default SAPHANA, express edition operating system user).   Running `HDB info` should return the following, or similar output:
 
 ```
 USER       PID  PPID %CPU    VSZ   RSS COMMAND
@@ -239,6 +239,8 @@ Which should return the following output:
 `Select * from teched`
 
 So - now, we have a running SAP HANA, express edition container, with a single table called Teched, with the data we inserted on your Mac.
+
+You can quit hdbsql by typing "q" and hitting enter.
 
 ## Containers and lifecycle
 
