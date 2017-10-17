@@ -27,32 +27,31 @@ In summary - don't expect Docker for Mac or Windows to be as robust and flexible
 ## Familiarize yourself with Docker for Mac
 * Launch Docker by navigating to the Applications folder (use the Finder), and doubleclick on Docker.    
 
-
-`![Finder](1.png "Finder on OSX")`
+![Finder](1.png "Finder on OSX")
 
 On the Apple MenuBar (**top right corner of your screen**) – find the Docker icon, leftclick on it - the following window appears.
 
-`![Docker Menu](2.png "Menu Bar")`
+![Docker Menu](2.png "Menu Bar")
 
 Scroll down to preferences, and click.
 
-`![Menu](3.png "Menu")`
-`![Docker Preferences](4.png "Docker Preferences")`
+![Menu](3.png "Menu")
+![Docker Preferences](4.png "Docker Preferences")
 
 
 Click on Advanced, and increase the CPUs to 4, and the memory allocation to 12GB.
 
-`![Increase Resources](4.png "Increase resources")`
+![Increase Resources](4.png "Increase resources")
 
 Review the settings in the file sharing section.   Any files you have to create for the tuturial has to be in one of the mapped folders.   These folders are shared with the container you create.
 
-`![File Sharing](5.png "Review File sharing")`
+![File Sharing](5.png "Review File sharing")
 
 ## Creating your first "Hello World" container application.
 
 Containers typically leverage a console driven model - so, get ready for some typing!   Using the Finder, navigate to and doubleclick on the Terminal Application.   Go to the Applications, Utilities folder.
 
-`![Terminal](7.png "Open the Terminal App for console access")`
+![Terminal](Picture1.png "Open the Terminal App for console access")
 
 Once the terminal is open, type the following command at the promptl
 
