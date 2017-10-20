@@ -87,9 +87,9 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 ### Prepare the Docker for MAC envrionment, and pull the container.
 
-The SAP HANA, express edition container is hosted on the Docker Store - a marketplace for certified docker containers.  A login is required to access the container - so, the run command we ran for "alpine" earlier will not work.    You have to configure your docker client on the Mac with the Docker ID you created earlier.
+The SAP HANA, express edition container is hosted on the Docker Store - a marketplace for certified docker containers.  A login is required to access the container.   You have to configure your docker client on the Mac with the Docker ID you created earlier.   
 
-Type the following, and enter your Docker ID and password when prompted:
+Open a Terminal and type the following, and enter your Docker ID and password when prompted:
 
 `docker login`
 
@@ -98,6 +98,30 @@ Go to store.docker.com, and search for SAP HANA, express edition.   Log in using
 Copy and paste the text on the top right hand side of the screen:
 
 `docker pull store/saplabs/hanaexpress:2.00.020.01.20170829.3`
+
+You should see output similar to this:
+```
+
+docker pull store/saplabs/hanaexpress:2.00.020.01.20170829.3
+2.00.020.01.20170829.3: Pulling from store/saplabs/hanaexpress
+6dc83f65d9ed: Pull complete 
+d878f83582e4: Pull complete 
+3a7c248772c0: Pull complete 
+abe9a2908c1f: Pull complete 
+56f5c132ae05: Pull complete 
+Digest: sha256:cb5f869a3b62e64df9812388eee9800dda7bff7ad3a1cea028c18fac228025cf
+Status: Downloaded newer image for store/saplabs/hanaexpress:2.00.020.01.20170829.3
+
+```
+
+If you see the following message - go back to the `docker login` step - you have to be signed in to pull the container.
+```
+Error response from daemon: pull access denied for store/saplabs/hanaexpress, 
+repository does not exist or may require 'docker login'
+
+```
+
+**Continue to next steps**:
 
 * While the pull comand is running, set up xhyve on the Mac and configure the minimum requirements for the HANA container.   
 
