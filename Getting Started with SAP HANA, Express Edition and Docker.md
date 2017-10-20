@@ -93,11 +93,13 @@ Open a Terminal and type the following, and enter your Docker ID and password wh
 
 `docker login`
 
-Go to store.docker.com, and search for SAP HANA, express edition.   Log in using your docker id, and click setup instructions.
+**Enter your Docker ID and password when prompted.   If you do not have a docker ID, go to store.docker.com, and create a free account.**
+
+Once your Docker client is looged in, go to store.docker.com, and search for SAP HANA, express edition.   Log in using your docker id, and click setup instructions.
 
 Copy and paste the text on the top right hand side of the screen:
 
-`docker pull store/saplabs/hanaexpress:2.00.020.01.20170829.3`
+ Example:  `docker pull store/saplabs/hanaexpress:2.00.020.01.20170829.3`
 
 You should see output similar to this:
 ```
