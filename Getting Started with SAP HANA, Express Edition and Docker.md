@@ -301,7 +301,7 @@ To remove a container, run `docker rm your_container_name_here`.
 ## Optional Exercises
 
 * Install Eclipse, and connect to SAP HANA using [this tutorial](https://www.sap.com/india/developer/how-tos/2016/09/hxe-howto-eclipse.html), and use the SQL Console to query the "teched" table created above.
-* Install the HANA client on the Mac usubg [this tutorial](https://www.sap.com/developer/how-tos/2016/12/hxe-ua-howto-installing-clients.html), and use hdbsql to connect to the container, and query the "teched" table created above.
+* Install the HANA client on the Mac using [this tutorial](https://www.sap.com/developer/how-tos/2016/12/hxe-ua-howto-installing-clients.html), and use hdbsql to connect to the container, and query the "teched" table created above.
 
 
 
