@@ -188,7 +188,7 @@ docker run -p 39013:39013 -p 39017:39017 -p 39041-39045:39041-39045 -p 1128-1129
 --name macosHXE \
 store/saplabs/hanaexpress:2.00.022.00.20171211.1 \
 --passwords-url file:///Users/Student/password.json \
---agree-to-sap-license
+--agree-to-sap-license ---dont-check-system 
 ```
 
 If the run command is succesful - "Startup Finished" will appear in your console - if not, retrace your steps - typical issues are mistakes with the passwords file.
