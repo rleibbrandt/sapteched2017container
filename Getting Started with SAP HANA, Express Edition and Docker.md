@@ -99,12 +99,12 @@ Once your Docker client is looged in, go to store.docker.com, and search for SAP
 
 Copy and paste the text on the top right hand side of the screen:
 
- Example:  `docker pull store/saplabs/hanaexpress:2.00.020.01.20170829.3`
+ Example:  `docker pull store/saplabs/hanaexpress:2.00.022.00.20171211.1`
 
 You should see output similar to this:
 ```
 
-docker pull store/saplabs/hanaexpress:2.00.020.01.20170829.3
+docker pull store/saplabs/hanaexpress:2.00.022.00.20171211.1
 2.00.020.01.20170829.3: Pulling from store/saplabs/hanaexpress
 6dc83f65d9ed: Pull complete 
 d878f83582e4: Pull complete 
@@ -112,7 +112,7 @@ d878f83582e4: Pull complete
 abe9a2908c1f: Pull complete 
 56f5c132ae05: Pull complete 
 Digest: sha256:cb5f869a3b62e64df9812388eee9800dda7bff7ad3a1cea028c18fac228025cf
-Status: Downloaded newer image for store/saplabs/hanaexpress:2.00.020.01.20170829.3
+Status: Downloaded newer image for store/saplabs/hanaexpress:2.00.022.00.20171211.1
 
 ```
 
@@ -186,7 +186,7 @@ docker run -p 39013:39013 -p 39017:39017 -p 39041-39045:39041-39045 -p 1128-1129
 --sysctl kernel.shmmni=524288 \
 --sysctl kernel.shmall=8388608 \
 --name macosHXE \
-store/saplabs/hanaexpress:2.00.020.01.20170829.3 \
+store/saplabs/hanaexpress:2.00.022.00.20171211.1 \
 --passwords-url file:///Users/Student/password.json \
 --agree-to-sap-license
 ```
